@@ -3,10 +3,16 @@ import './App.css'
 function App() {
 
   return (
-    <>
-      <h1>Oscar Anillo</h1>
-      <p>Fullstack Developer</p>
-    </>
+    <div className='App'>
+      <div className='timer'>
+        <h1>00:00:00.00</h1>
+      <div>
+        <button>Start</button>
+        <button>Stop</button>
+        <button>Reset</button>
+      </div>
+      </div>
+    </div>
   )
 }
 
