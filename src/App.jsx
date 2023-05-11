@@ -35,9 +35,9 @@ function App() {
   }
 
   return (
-    <div className='App'>
+    <div className={`${isRunning ? "App":"App-test"}`}>
       <div className='timer'>
-          <span className='hour'>{hours}</span>
+          <span className='hour'>0{hours}</span>
           :<span className='minutes'>{minutes.toString().padStart(2, "0")}</span>
           :<span className='seconds'>{seconds.toString().padStart(2, "0")}</span>
           .<span className='milliseconds'>{milliseconds.toString().padStart(2, "0")}</span>

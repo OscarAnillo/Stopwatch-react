@@ -5,10 +5,20 @@
   padding: 0;
 }
 .App {
-  background-color: #f9f9f9;
+  background-image: url("https://images.saymedia-content.com/.image/t_share/MTkzOTUzODU0MDkyNjE3MjIx/particlesjs-examples.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
   overflow: hidden;
   position: relative;
+}
+.App-test {
+  background-image: url("https://cdn.dribbble.com/users/119530/screenshots/3433250/comp4.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 .timer {
   font-family: 'Montserrat', sans-serif;
@@ -17,9 +27,13 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 4rem;
+  font-size: 3.45rem;
   max-width: 340px;
   margin: 0 auto;
+  
+}
+.timer span {
+  text-shadow:  3px 5px 8px rgba(0,0,0, .5);
 }
 .timer .minutes {
   color: #5783db;
@@ -57,9 +71,9 @@ button {
 
 @media(min-width: 760px) {
   .timer {
-    max-width: 600px;
+    max-width: 630px;
     font-size: 6.5rem;
-    padding-left: 1em;
+    padding-left: .1em;
   }
   button {
     font-size: 1.5rem;
